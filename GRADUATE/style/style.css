@@ -1,0 +1,257 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header{
+    background-color: rgba(243, 198, 189, 1);
+    padding: 44px 0 79px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    margin: 15px;
+}
+
+.logo_title{
+    font-weight: 700;
+    size: 20px;
+    line-height: 20px;
+    color: rgba(43, 41, 45, 1);
+}
+
+.logo_text{
+    font-weight: 400;
+    line-height: 25px;
+    size: 18px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+
+.header_li:not(:last-of-type){
+    margin-right: 30px;
+}
+
+.header_link{
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #2B292D;
+    position: relative;
+}
+
+.header_li{
+    list-style-type: none;
+}
+
+.header_link:hover::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}
+
+.header_ul{
+    margin: 77px;
+}
+
+.header_button{
+    width: 160px;
+    height: 48px;
+    background-color: rgba(48, 64, 196, 1);
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.header_button:hover{
+    background-color:  rgba(59, 77, 237, 0.5);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.section{
+    background-color: rgba(244, 245, 247, 1);
+    padding: 77px 0 76px;
+}
+
+
+.section_container{
+    width: 555px;
+    height: 102px;
+}
+
+.section_li{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2B292D;
+    margin: 0;
+}
+
+.section_link{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2B292D;
+}
+
+.grid{
+    display: grid;
+    column-gap: 41.72px;
+    row-gap: 49.52px;
+    grid-template-columns: repeat(3, 346.65px);
+    grid-template-rows: repeat(3, 207.92px);
+}
+
+.item{
+    border-radius: 8px;
+}
+
+.item:nth-child(3), .item:nth-child(4){
+    grid-row: span 2;
+}
+
+.gost_li{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: rgba(0, 0, 0, 1);
+    margin: 26px 0;
+}
+
+.gost_text{
+    font-size: 24px;
+    line-height: 34px;
+    color: #172342;
+}
+
+.gost{
+    text-align: center;
+    padding: 96.78px;
+}
+
+.item_section{
+    background-color: rgba(255, 255, 255, 1);
+    width: 262px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.item_section_2{
+    background-color: rgba(49, 65, 197, 1);
+    width: 262px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.item_section_2 img{
+    padding: 22px 60px;
+}
+
+.item_section img{
+    padding: 22px 60px;
+}
+
+.div_section{
+    gap: 30px;
+    padding: 111px 110px;
+}
+
+.flex_section{
+    background-color:rgba(0, 162, 198, 0.089);
+}
+
+.item_text{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: rgba(43, 41, 45, 1);
+    text-align: center;
+    margin: 10px;
+}
+
+.item_li{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 10px;
+}
+
+.flex_text{
+    text-align: center;
+}
+
+.flex_text_1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: rgba(43, 41, 45, 1);
+    padding: 108px 0 24px;
+    margin: 0 auto;
+}
+.flex_text_2{
+    Width: 555px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    color: rgba(43, 41, 45, 1);
+}
+
+.flex_text_3{
+    Width: 555px;
+    font-size: 24px;
+    line-height: 34px;
+    color: rgba(43, 41, 45, 1);
+    padding: 30px 0 34px;
+}
+
+.flex_button{
+    display: flex;
+    justify-content: center;
+}
+
+.flex_button_1{
+    width: 160px;
+    height: 48px;
+    border-radius: 2px;
+    background-color: rgba(48, 64, 196, 1);
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin: 5px;
+}
+
+.flex_button_2{ 
+    width: 158px;
+    height: 48px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 1);
+    margin: 5px;
+}
+
+.container_bitmat{
+    margin: 30px;
+}
