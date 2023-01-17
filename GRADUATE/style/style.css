@@ -4,7 +4,7 @@ body{
 
 .header{
     background-color: rgba(243, 198, 189, 1);
-    padding: 44px 0 79px;
+    padding: 5px 0;
 }
 
 .container{
@@ -16,6 +16,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flex_start{
+    justify-content: start;
 }
 
 .logo img{
@@ -56,7 +60,7 @@ body{
 .header_link:hover::before{
     content: '';
     position: absolute;
-    width: 100%;
+    max-width: 100%;
     height: 2px;
     background-color: #000000;
 }
@@ -65,8 +69,8 @@ body{
     margin: 77px;
 }
 
-.header_button{
-    width: 160px;
+.button{
+    max-width: 160px;
     height: 48px;
     background-color: rgba(48, 64, 196, 1);
     border: none;
@@ -77,10 +81,121 @@ body{
     color: #FFFFFF;
 }
 
-.header_button:hover{
+.button:hover{
     background-color:  rgba(59, 77, 237, 0.5);
     cursor: pointer;
     transition: 1s;
+}
+
+.inbox{
+    background-color: rgba(252, 240, 227, 1);
+    padding: 115px 0 116px;
+}
+
+.container_image{
+    margin-right: 231px;
+}
+
+.inbox_response{
+    max-width: 519px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px 30px 24px;
+    box-sizing: border-box;
+    border-bottom: 4px solid rgba(1, 133, 208, 1);
+}
+
+.inbox_text{
+    font-size: 20px;
+    line-height: 28px;
+    color: #2B292D;
+    margin-bottom: 26px;
+}
+
+.inbox_text-bolt{
+    font-weight: 700;
+}
+
+.inbox_img{
+    margin-right: 11px;
+}
+
+.inbox_name{
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 1);
+}
+
+.inbox_position{
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.info_pretitle{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 26px;
+}
+
+.info_pretitle-orange{
+    color: #F1592B;
+}
+.info_title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 26px;
+}
+
+.info_text{
+    font-size: 24px;
+    Line-height: 34px;
+    margin-bottom: 44px;
+}
+
+.box{
+    padding: 110px 0 105px;
+}
+
+.box_info{
+    margin-right: 193px;
+}
+
+.box_page{
+    margin-bottom: 105px;
+}
+
+.info_pretitle-blue{
+    color: rgba(1, 137, 209, 1);
+}
+
+.box_meta{
+    max-width: 360px;
+}
+
+.meta_text{
+    font-size: 18px; 
+    color: rgba(43, 41, 45, 1);
+}
+
+.meta_link{
+    font-size: 18px; 
+    font-weight: 700;
+    color: rgba(48, 64, 196, 1);
+    position: relative;
+}
+
+.meta_link:hover::after{
+    content: '';
+    position: absolute;
+    max-width: 100%;
+    height: 2px;
+    background-color:rgba(48, 64, 196, 1);
+}
+
+.meta_text-bolt{
+    font-weight: 700;
 }
 
 .section{
@@ -90,8 +205,7 @@ body{
 
 
 .section_container{
-    width: 555px;
-    height: 102px;
+    max-width: 555px;
 }
 
 .section_li{
@@ -146,14 +260,7 @@ body{
 
 .item_section{
     background-color: rgba(255, 255, 255, 1);
-    width: 262px;
-    height: 300px;
-    border-radius: 8px;
-}
-
-.item_section_2{
-    background-color: rgba(49, 65, 197, 1);
-    width: 262px;
+    max-width: 262px;
     height: 300px;
     border-radius: 8px;
 }
@@ -167,9 +274,15 @@ body{
 }
 
 .div_section{
-    gap: 30px;
-    padding: 111px 110px;
+    padding: 111px 0 110px;
 }
+
+.grid_1{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 262px);
+}
+
 
 .flex_section{
     background-color:rgba(0, 162, 198, 0.089);
@@ -184,14 +297,13 @@ body{
     margin: 10px;
 }
 
-.item_li{
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
+.cursor:hover{
+    background-color: rgba(49, 65, 197, 1);
     color: #FFFFFF;
-    text-align: center;
-    margin: 10px;
+    cursor: pointer;
+    transition: 1s;
 }
+
 
 .flex_text{
     text-align: center;
@@ -200,23 +312,20 @@ body{
 .flex_text_1{
     font-weight: 700;
     font-size: 22px;
-    line-height: 34px;
     color: rgba(43, 41, 45, 1);
     padding: 108px 0 24px;
     margin: 0 auto;
 }
 .flex_text_2{
-    Width: 555px;
+    max-width: 555px;
     font-weight: 700;
     font-size: 56px;
-    line-height: 56px;
     color: rgba(43, 41, 45, 1);
 }
 
 .flex_text_3{
-    Width: 555px;
+    max-width: 555px;
     font-size: 24px;
-    line-height: 34px;
     color: rgba(43, 41, 45, 1);
     padding: 30px 0 34px;
 }
@@ -227,7 +336,7 @@ body{
 }
 
 .flex_button_1{
-    width: 160px;
+    max-width: 160px;
     height: 48px;
     border-radius: 2px;
     background-color: rgba(48, 64, 196, 1);
@@ -240,7 +349,7 @@ body{
 }
 
 .flex_button_2{ 
-    width: 158px;
+    max-width: 158px;
     height: 48px;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 1);
