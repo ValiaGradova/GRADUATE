@@ -64,7 +64,7 @@
                 </p>
                 <div>
                     <button class="button button_big">Get Started</button>
-                    <button class="button button_white button_big button_white_big">Learn More</button>
+                    <button id="open-modal" class="button button_white button_big button_white_big">Learn More</button>
                 </div>
             </div>
             <div class="main_img">
@@ -112,6 +112,49 @@
         <div>
             <img class="img" src="./img/bitmat/Bitmap (5).png" alt="">
         </div>
+    </div>
+    </section>
+    <section class="selector-block">
+        <div class="flex container selector-block-container">
+        <div>
+            <div>
+                <p class="info_pretitle info_pretitle-green">Features</p>
+                <p class="info_selector">Easily find leads and customers</p>
+                <p class="text_selector">Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
+            </div>
+            <div>
+                <div>
+                <div class="flex selector">
+                    <img src="./img/section/Icon (2).svg" alt="">
+                    <p class="selector-title">Acquire new customers</p>
+                </div>
+                <p class="selector-text">Everything you need to start building – including open-source code, documentation.</p>
+                <div class="selector-line"></div>
+                </div>
+                <div>
+                <div class="flex selector">
+                    <img src="./img/section/Icon (3).svg" alt="">
+                    <p class="selector-title">Engage users</p>
+                </div>
+                <p class="selector-text">Everything you need to start building – including open-source code, documentation.</p>
+                <div class="selector-line"></div>    
+            </div>
+            <div>
+                <div class="flex selector">
+                    <img class="selector-img" src="./img/section/Icon (4).svg" alt="">
+                    <p class="selector-title">Develop across platforms</p>
+                </div>
+                <p class="selector-text">Everything you need to start building – including open-source code, documentation.</p>
+                <div class="selector-line"></div>
+            </div>
+            </div>
+        </div>
+        <div class="selector-container">
+            <img class="selector-container" src="./img/section/Invision Screen.png" alt="">
+        </div>
+    </div>
+    <div>
+        <img class="ouch" src="./img/section/ouch.svg" alt="">
     </div>
     </section>
     <section class="inbox">
@@ -229,6 +272,54 @@
     </div>
     </section>
     <section class="container">
+        <div class="list-container">
+            <p class="pretitle">We’re hiring</p>
+            <p class="title">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
+            <button class="list_button">More about Company</button>
+        </div>
+        <div class="container">
+            <div class="list">
+                <div class="flex">
+                    <p class="list_title">
+                        Front-End Developer
+                    </p>
+                    <p class="list_icon">
+                        >
+                    </p>
+                </div>
+                <p class="list_text">
+                    Everything you need to start building – including open-source code, documentation.
+                </p>
+            </div>
+            <div class="list">
+                <div class="flex">
+                    <p class="list_title">
+                        Community Manager
+                    </p>
+                    <p class="list_icon">
+                        >
+                    </p>
+                </div>
+                <p class="list_text">
+                    Everything you need to start building – including open-source code, documentation.
+                </p>
+            </div>
+            <div class="list">
+                <div class="flex">
+                    <p class="list_title">
+                        UX/UI Designer
+                    </p>
+                    <p class="list_icon">
+                        >
+                    </p>
+                </div>
+                <p class="list_text">
+                    Everything you need to start building – including open-source code, documentation.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
         <div class="gost">
         <h5 class="gost_li">
             All Surfaces Covered
@@ -282,9 +373,9 @@
     </div>
 </section>
 <section class="footer">
-    <div class="flex container footer_column">
+    <div class="flex-start container footer_column container-mini">
         <div>
-            <div class="logo flex">
+            <div class="logo flex footer_column-logo">
                 <img src="./img/footer/Icon (1).svg" alt="logo">
                 <div class="logo-footer">
                     <h2 class="logo_title">
@@ -301,7 +392,7 @@
                 <img src="./img/footer/Google Play.png" alt="">
             </div>
         </div>
-        <div>
+        <div class="footer_section">
             <p class="footer_pretitle">Product</p>
             <p class="footer_title">Acquire Users</p>
             <p class="footer_title">Content Marketing</p>
@@ -320,7 +411,7 @@
     <div class="footer_line_container">
         <div class="footer_line"></div>
     </div>
-    <div class="container flex footer_column">
+    <div class="container flex footer_column container-mini">
         <p class="footer_li">Terms Privacy License</p>
         <div>
         <img class="footer_img" src="./img/footer/icon-twitter.png" alt="">
@@ -329,5 +420,14 @@
     </div>
     </div>
 </section>
+<div class="modal-overlay">
+    <div class="modal">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magnam ullam fugit, mollitia laudantium tenetur culpa delectus, expedita facere aut officia esse sunt quisquam! Natus voluptates corporis error magni temporibus.</p>
+        <p class="close">x</p>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script/script.js"></script>
+<script src="./script/modal.js"></script>
 </body>
 </html>
