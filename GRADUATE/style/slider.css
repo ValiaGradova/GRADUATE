@@ -1,0 +1,21 @@
+.bx-wrapper{
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 60px;
+    border: none;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+    border-bottom: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(43, 41, 45, 0.096);
+}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.bx-wrapper .bx-pager.bx-default-pager a.active, 
+.bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background-color: rgba(49, 66, 197, 1);
+}

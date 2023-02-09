@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/slider.css">
 </head>
 <body>
     <header class="header">
@@ -35,7 +37,7 @@
                     <div class="menu_all flex">
                 <ul class="header_ul flex header_ul_menu">
                     <li class="header_li">
-                        <a class="header_link" href="">
+                        <a class="header_link" id="list-link" href="">
                             Home
                         </a>
                     </li>
@@ -271,6 +273,28 @@
         </div>
     </div>
     </section>
+    <section class="container carusel-container">
+        <div class="carusel">
+            <div>
+                <p class="carusel-pretitle">Trusted by the world’s most innovative businesses – big and small</p>
+                <p class="carusel-title">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
+                <p class="carusel-text-bold">Viella Malkovich</p>
+                <p class="carusel-text">Creative Director at Johnson</p>
+            </div>
+            <div>
+                <p class="carusel-pretitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates fugiat quidem iste qui eaque minima atque vel placeat voluptatum hic aspernatur deleniti commodi facere, repellendus sint praesentium amet reprehenderit?</p>
+                <p class="carusel-title">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
+                <p class="carusel-text-bold">Viella Malkovich</p>
+                <p class="carusel-text">Creative Director at Johnson</p>
+            </div>
+            <div>
+                <p class="carusel-pretitle">Ipsam voluptates fugiat quidem iste qui eaque minima atque vel placeat voluptatum hic aspernatur deleniti commodi facere, repellendus sint praesentium amet reprehenderit?</p>
+                <p class="carusel-title">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
+                <p class="carusel-text-bold">Viella Malkovich</p>
+                <p class="carusel-text">Creative Director at Johnson</p>
+            </div>
+        </div>
+    </section>
     <section class="container">
         <div class="list-container">
             <p class="pretitle">We’re hiring</p>
@@ -278,7 +302,7 @@
             <button class="list_button">More about Company</button>
         </div>
         <div class="container">
-            <div class="list">
+            <div id="list" class="list">
                 <div class="flex">
                     <p class="list_title">
                         Front-End Developer
@@ -426,8 +450,16 @@
         <p class="close">x</p>
     </div>
 </div>
+<div id="up">
+    <span>
+        >
+    </span>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="./script/script.js"></script>
 <script src="./script/modal.js"></script>
+<script src="./script/bxslider.js"></script>
+<script src="./script/upButton.js"></script>
 </body>
 </html>
